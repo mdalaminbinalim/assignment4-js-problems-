@@ -16,6 +16,22 @@ function mindGame (numberTaken){
         return result;
     }
 }
-const result = mindGame(5);
-console.log(result);
+
+
+
+// /* Problem 2 */ //
+
+function evenOdd (string) {
+    // This Function will return whether the input string's length is an even or odd.
+    if (typeof string !== 'string'){
+        return "Provide Valid Input. Input must be a string data type..."
+    }
+    else if (string.length % 2 === 0){
+        return "even";
+    }
+    else {
+        return "odd"
+    }
+}
+
 
