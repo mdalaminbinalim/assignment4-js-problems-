@@ -54,8 +54,23 @@ function isLGSeven (number){
 
 
 
-/* Problem 4 */
+// /* Problem 4 */ //
 
-
+function findingBadData (dataInArray){
+    // This Function will return the number of Bad datas in an Array.
+    if (typeof dataInArray !== 'object'){
+        return "Provide Valid Input. Input must be an array..."
+    }
+    const badData = [];
+    for (let i = 0; i < dataInArray.length; i++){
+        const element = dataInArray[i];
+        if (element < 0){
+            badData.push(element);
+        }
+    }
+    return badData.length;
+}
+const result = findingBadData ([5, 4, 3, 2, 1, 0, -1, -2, -3, -5, -7, -9]);
+console.log(result);
 
 
